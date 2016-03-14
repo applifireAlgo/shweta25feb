@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.organizationboundedcontext.location.TimezoneTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-14T11:45:53" hostname="0ac02da9f065" time="0.92">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.organizationboundedcontext.location.TimezoneTestCase" time="0.804"/>
+  <testcase name="test2Update" classname="com.app.server.service.organizationboundedcontext.location.TimezoneTestCase" time="0.049"/>
+  <testcase name="test3FindById" classname="com.app.server.service.organizationboundedcontext.location.TimezoneTestCase" time="0.01"/>
+  <testcase name="test4Delete" classname="com.app.server.service.organizationboundedcontext.location.TimezoneTestCase" time="0.056"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-14 11:45:53.206--ClientSession(1822174892)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [686439C2-675B-491E-8541-DF1A826E5BE8, jljFFRRj6Rn0fZwmiNr8Yf9qe5ma3gvkYn8g3CqqOgy130oRkn, uTHTVL8vEgK4d1Yf8TS7fLnRqAwXAxQkRCP3z5UTopSBY4iZ0U, A9x5iV8WsQCam25CLkAA0cE6Y8URhtAYXdKFZfhgAZT94AFg8D, oEKtY2BWtk0vExylwTZ2es6sNjMdxmBpEyNDbEv5KqIN8tEp84, 7, 1, AAAAA, 2016-03-14 11:45:53.191, null, 2016-03-14 11:45:53.191, 1, 51000]
+[EL Fine]: sql: 2016-03-14 11:45:53.988--ClientSession(1348390941)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, 686439C2-675B-491E-8541-DF1A826E5BE8]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-14 11:45:53.994--ClientSession(1179488881)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [686439C2-675B-491E-8541-DF1A826E5BE8]
+[EL Fine]: sql: 2016-03-14 11:45:53.996--ClientSession(1179488881)--Connection(330539551)--Thread(Thread[Test worker,5,main])--UPDATE ast_Timezone_M SET cities = ?, country = ?, gmtLabel = ?, timeZoneLabel = ?, utcdifference = ?, updatedBy = ?, versionId = ? WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [yg3fY3IXeE2gsy1qPyAzFokp9B4uhD96NHbQbUpcUF7UrccQmn, Aq1nepNx4ScPPBIm69lsOgTCKYXQgvB13NxJkrFNCA9VrFqW3s, SZ9Eh2ExdUlR2y1DckTkYHwJFkGBhUsqbfQtLhG5totDAwswS5, A74JANZExH6erjABazNJESiSJvlKNVIMelcbVxTcvC5bd7XaKC, 5, AAAAA, 2, 686439C2-675B-491E-8541-DF1A826E5BE8, 1]
+[EL Fine]: sql: 2016-03-14 11:45:54.037--ClientSession(649344407)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, 686439C2-675B-491E-8541-DF1A826E5BE8]
+[EL Fine]: sql: 2016-03-14 11:45:54.047--ClientSession(1514486298)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [686439C2-675B-491E-8541-DF1A826E5BE8]
+[EL Fine]: sql: 2016-03-14 11:45:54.049--ClientSession(1514486298)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Timezone_M WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [686439C2-675B-491E-8541-DF1A826E5BE8, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

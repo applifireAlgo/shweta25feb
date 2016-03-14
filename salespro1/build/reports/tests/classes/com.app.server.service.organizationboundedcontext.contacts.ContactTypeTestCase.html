@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.organizationboundedcontext.contacts.ContactTypeTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.organizationboundedcontext.contacts.ContactTypeTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.organizationboundedcontext.contacts.html">com.app.server.service.organizationboundedcontext.contacts</a> &gt; ContactTypeTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.275s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.129s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.074s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.055s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-14 11:45:49.588--ClientSession(22781927)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ContactType_M (contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C, k797kwDa2t4DOl0otY7p96oTyYwHzzwoRcuaNfu7YfcZaw6ecv, rmUtZe9prJV9QN1ix17EaDoJo8KsN9IsbOY76Wae6U8MuRdGdu, aaSkVTtevN8Fk62AQBK1ttLGs2PhayaKm9uCwoyfVxZT7r7Uv5, 1, AAAAA, 2016-03-14 11:45:49.53, null, 2016-03-14 11:45:49.53, 1, 51000]
+[EL Fine]: sql: 2016-03-14 11:45:49.653--ClientSession(1108734570)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE ((activeStatus = ?) AND (contactTypeId = ?))
+	bind =&gt; [1, B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-14 11:45:49.662--ClientSession(1015716387)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE (contactTypeId = ?)
+	bind =&gt; [B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C]
+[EL Fine]: sql: 2016-03-14 11:45:49.664--ClientSession(1015716387)--Connection(330539551)--Thread(Thread[Test worker,5,main])--UPDATE ast_ContactType_M SET contactType = ?, contactTypeDesc = ?, contactTypeIcon = ?, updatedBy = ?, versionId = ? WHERE ((contactTypeId = ?) AND (versionId = ?))
+	bind =&gt; [qlVoZbHZf2CdLfvrc7F1cu0YlY08Vwg92NIXSiVnH4V8zhb0IM, Sa0JXsgDfQ42eVc8cgcjJCTmEbNAEgdPOsHODs9V6QCIHS4UnX, A0YvgHi8HyZKs9Kyoj4pqS4Es8x6MrFRUZA3ouP2PgjUBlQ5LS, AAAAA, 2, B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C, 1]
+[EL Fine]: sql: 2016-03-14 11:45:49.728--ClientSession(1082365407)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE ((activeStatus = ?) AND (contactTypeId = ?))
+	bind =&gt; [1, B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C]
+[EL Fine]: sql: 2016-03-14 11:45:49.746--ClientSession(102663429)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE (contactTypeId = ?)
+	bind =&gt; [B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C]
+[EL Fine]: sql: 2016-03-14 11:45:49.748--ClientSession(102663429)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_ContactType_M WHERE ((contactTypeId = ?) AND (versionId = ?))
+	bind =&gt; [B2D8CCBF-6CD5-413B-AEB8-E12D97A1628C, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 14, 2016 11:45:55 AM</p>
+</div>
+</div>
+</body>
+</html>

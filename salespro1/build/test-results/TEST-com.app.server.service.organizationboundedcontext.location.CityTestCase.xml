@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.organizationboundedcontext.location.CityTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-03-14T11:45:54" hostname="0ac02da9f065" time="0.434">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.organizationboundedcontext.location.CityTestCase" time="0.195"/>
+  <testcase name="test2Update" classname="com.app.server.service.organizationboundedcontext.location.CityTestCase" time="0.074"/>
+  <testcase name="test3FindById" classname="com.app.server.service.organizationboundedcontext.location.CityTestCase" time="0.012"/>
+  <testcase name="test3findBycountryId" classname="com.app.server.service.organizationboundedcontext.location.CityTestCase" time="0.011"/>
+  <testcase name="test3findBystateId" classname="com.app.server.service.organizationboundedcontext.location.CityTestCase" time="0.011"/>
+  <testcase name="test4Delete" classname="com.app.server.service.organizationboundedcontext.location.CityTestCase" time="0.13"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-03-14 11:45:55.022--ClientSession(435861393)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [631F7980-C9D4-4ED2-B2EC-EA2A180ACA75, IqvA4u97cKp9lpKD5u0vZ9nfJYnOYsJk, 5, 1, AKn, jpQ, qr9mXSoWPEe1SOfmqsVgrscmkbBPcvrFDT146jPjAtVar5Wss0, 41iLMdSLrfEQvI4mGukQfrfcxoTP5a6ntVe65sYVnpvQ6HYxsg, vXq, HEqk9sQn4AdrZoG4vd1VskocpwsugtNuu3j6kMIJ9KwHzhFyNF, EDmhBXz3n5PEv66cARrn32qCltKd9GhK, 8, 1, AAAAA, 2016-03-14 11:45:55.011, null, 2016-03-14 11:45:55.011, 1, 51000]
+[EL Fine]: sql: 2016-03-14 11:45:55.088--ClientSession(1481990839)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1A51C6D6-1EBF-46F4-AC25-CD9114ECCA9A, 631F7980-C9D4-4ED2-B2EC-EA2A180ACA75, nh6On40eLbdQc6np1Xn5XhLlDiBUuJWVXNoUE8IfXga7gQHil5, 3, 11, 1, 1hqwbCpiIb5MCHxfmRIVDkC9wgFbt44t, fUFnQFDrpxU5xKCyxVDesvpffEDOk3PX, rny1ofIDmbXfkoEEtmREkX5dx56735BlDzwinnsLSVsws3CCrx, 0opRe3qg2xW8y2VIj9K1oQ1b00dmez1qvoPbnesopMvgO66221, 5WLR9ZMHynhwJGUfsyu5iHO6F7XYRCCzBrKjmv5Cpnvcl5s9Vp, 1, AAAAA, 2016-03-14 11:45:55.011, null, 2016-03-14 11:45:55.011, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-14 11:45:55.162--ClientSession(212161968)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [8098FB8D-78AE-47C3-9C87-E4EE3256D05D, 2, S6l3z0vFtzg6wzm3H3al7jq2rxS32Nwg, UGxDmSVbeuU3pYgZUOPXxm4lyjrbWk5gjm1VrtwZTJEPuuD0zW, fQX7e2Zy2SeCbnaUJxxu9dNbakq9Pk8NRj3ydGHLO1ESlIWP6Z, 2, 3, aXGxMeqSip5UmzThd14DN8wOheqS4H9L0rV4MnsPal0YBxjC8V, 631F7980-C9D4-4ED2-B2EC-EA2A180ACA75, 1A51C6D6-1EBF-46F4-AC25-CD9114ECCA9A, 1, AAAAA, 2016-03-14 11:45:55.144, null, 2016-03-14 11:45:55.144, 1, 51000]
+[EL Fine]: sql: 2016-03-14 11:45:55.215--ClientSession(1411887556)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE ((activeStatus = ?) AND (cityId = ?))
+	bind => [1, 8098FB8D-78AE-47C3-9C87-E4EE3256D05D]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-14 11:45:55.223--ClientSession(2087794347)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [8098FB8D-78AE-47C3-9C87-E4EE3256D05D]
+[EL Fine]: sql: 2016-03-14 11:45:55.225--ClientSession(2087794347)--Connection(330539551)--Thread(Thread[Test worker,5,main])--UPDATE ast_City_M SET cityCodeChar2 = ?, cityDescription = ?, cityFlag = ?, cityLongitude = ?, cityName = ?, updatedBy = ?, versionId = ? WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [Amzs0uPkIrYAcUuUaltLbP1nSLb7oi5W, kuyclrB6rjE7T8KGmNcAXYmF9SfYVnrJ3Es8fKf3SflZbdm4Ur, byviQaQrY0Z6EkLyDvcye7dffMchMyEOogP5Ail9it3Gi6SJ3x, 11, SNJRLYvfkNupZDtKS6OIvQgXDOR2NlXOBuHZw72fiQKMpAAAyf, AAAAA, 2, 8098FB8D-78AE-47C3-9C87-E4EE3256D05D, 1]
+[EL Fine]: sql: 2016-03-14 11:45:55.278--ClientSession(536783898)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE ((activeStatus = ?) AND (cityId = ?))
+	bind => [1, 8098FB8D-78AE-47C3-9C87-E4EE3256D05D]
+[EL Fine]: sql: 2016-03-14 11:45:55.289--ClientSession(394369516)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind => [1, 631F7980-C9D4-4ED2-B2EC-EA2A180ACA75]
+[EL Fine]: sql: 2016-03-14 11:45:55.301--ClientSession(1242861693)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE ((activeStatus = ?) AND (stateId = ?))
+	bind => [1, 1A51C6D6-1EBF-46F4-AC25-CD9114ECCA9A]
+[EL Fine]: sql: 2016-03-14 11:45:55.317--ClientSession(1918874544)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [8098FB8D-78AE-47C3-9C87-E4EE3256D05D]
+[EL Fine]: sql: 2016-03-14 11:45:55.319--ClientSession(1918874544)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [8098FB8D-78AE-47C3-9C87-E4EE3256D05D, 2]
+[EL Fine]: sql: 2016-03-14 11:45:55.374--ClientSession(210519222)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [1A51C6D6-1EBF-46F4-AC25-CD9114ECCA9A]
+[EL Fine]: sql: 2016-03-14 11:45:55.375--ClientSession(210519222)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [1A51C6D6-1EBF-46F4-AC25-CD9114ECCA9A, 1]
+[EL Fine]: sql: 2016-03-14 11:45:55.406--ClientSession(1163524520)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [631F7980-C9D4-4ED2-B2EC-EA2A180ACA75]
+[EL Fine]: sql: 2016-03-14 11:45:55.407--ClientSession(1163524520)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [631F7980-C9D4-4ED2-B2EC-EA2A180ACA75, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

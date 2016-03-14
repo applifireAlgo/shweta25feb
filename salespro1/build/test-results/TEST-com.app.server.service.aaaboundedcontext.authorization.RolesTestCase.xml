@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.aaaboundedcontext.authorization.RolesTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-14T11:45:48" hostname="0ac02da9f065" time="0.46">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.aaaboundedcontext.authorization.RolesTestCase" time="0.23"/>
+  <testcase name="test2Update" classname="com.app.server.service.aaaboundedcontext.authorization.RolesTestCase" time="0.072"/>
+  <testcase name="test3FindById" classname="com.app.server.service.aaaboundedcontext.authorization.RolesTestCase" time="0.02"/>
+  <testcase name="test4Delete" classname="com.app.server.service.aaaboundedcontext.authorization.RolesTestCase" time="0.137"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-03-14 11:45:48.887--ClientSession(1775337738)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AppMenus_M (menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [26B2086C-6F0A-47A4-907B-0CF5247D3018, maaK5Hy5V80JLhO5eyZhipgJAMGGLi8iKn6B0lqs7jM9OmWUui, 1, true, 2, biWYeJMKqH9DQrTmOPLNJrOF7OAf1hEympJ0bYt6tO64hMoI2i, zfljEoAnjqh3uwPRezlgp5VBYb6aXOydUVJqTbYscOaMkyQ2x0, true, true, GvIXvsxJqmSq6T6bndAM09uk2RQIwkMv0iHFoRM2dtzbwFJtn0, UqRaLxs12VLADILsf3N9WqisTQL9bmBFfmdIF46dke1FkIAmv8, fJtLZSkML5NWH10bcqVHGCXRvp8I7VIp3aKK7LhgDYFa3Uvnlh, U0b3HqP8JgSLfghQtXT0oPcc02oJXWhCHMiVUrHNIgExskMUGV, 1AV, 1, AAAAA, 2016-03-14 11:45:48.818, null, 2016-03-14 11:45:48.818, 1, 51000]
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-14 11:45:48.971--ClientSession(1630071394)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Roles_T (roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B, eD2ixpfQk0sXeOYrHjmDAyvJtHpjfbBtIPVusM1A6NYow5h0Gs, wClSiAruVTOTa5xI9vIbwDYgciPxXUpHHiA4G15BFYFBY4b6TR, NhO0TIdY8M9xCbPWxXzEqEv4IA7BUYJKFovzwUKfGAKlqaz6Kw, bl12af14A79vvET9wI10U2ySz5OVLisXslHimcDltq25ZQ8YEi, 1, AAAAA, 2016-03-14 11:45:48.818, null, 2016-03-14 11:45:48.818, 1, 51000]
+[EL Fine]: sql: 2016-03-14 11:45:48.973--ClientSession(1630071394)--Connection(330539551)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RoleMenuBridge_TP (roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [08394450-2B44-47EF-8BB1-82322FA9AA6D, true, true, true, 26B2086C-6F0A-47A4-907B-0CF5247D3018, 1, AAAAA, 2016-03-14 11:45:48.818, null, 2016-03-14 11:45:48.818, 1, 51000, BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.044--ClientSession(622684635)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind => [1, BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.046--ClientSession(622684635)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B]
+Setting logged in user info for UPDATE
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-14 11:45:49.056--ClientSession(1164452364)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.057--ClientSession(1164452364)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.06--ClientSession(1164452364)--Connection(330539551)--Thread(Thread[Test worker,5,main])--UPDATE ast_Roles_T SET RoleDescription = ?, roleHelp = ?, RoleIcon = ?, RoleName = ?, updatedBy = ?, versionId = ? WHERE ((roleId = ?) AND (versionId = ?))
+	bind => [idvnb2iD4GAG3EiqoCOGUv7jgqxfI9ToIhfwQUjWaUxgeOFUP9, eAw5AmUwiraVkTAaLA6nEMfTdCcLU1HrHVlCpcogkRfAj6Wmdj, rjZymuunXJZGH72lPzN21YacgD8nUGWslQ9r4UOJxLMZhgocG9, eQJvv0aiot4e1iAMtELmoF9xrPHNYbS0SsPIBfF29cT7EpfIz3, AAAAA, 2, BC851029-B578-46D0-B4E7-34CC511DB49B, 1]
+[EL Fine]: sql: 2016-03-14 11:45:49.076--ClientSession(1164452364)--Connection(330539551)--Thread(Thread[Test worker,5,main])--UPDATE ast_RoleMenuBridge_TP SET updatedBy = ?, versionId = ? WHERE ((roleMenuMapId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 08394450-2B44-47EF-8BB1-82322FA9AA6D, 1]
+[EL Fine]: sql: 2016-03-14 11:45:49.117--ClientSession(1090073226)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind => [1, BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.118--ClientSession(1090073226)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.134--ClientSession(1041349661)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.136--ClientSession(1041349661)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B]
+[EL Fine]: sql: 2016-03-14 11:45:49.139--ClientSession(1041349661)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RoleMenuBridge_TP WHERE ((roleMenuMapId = ?) AND (versionId = ?))
+	bind => [08394450-2B44-47EF-8BB1-82322FA9AA6D, 2]
+[EL Fine]: sql: 2016-03-14 11:45:49.141--ClientSession(1041349661)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Roles_T WHERE ((roleId = ?) AND (versionId = ?))
+	bind => [BC851029-B578-46D0-B4E7-34CC511DB49B, 2]
+[EL Fine]: sql: 2016-03-14 11:45:49.204--ClientSession(497451781)--Connection(330539551)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind => [26B2086C-6F0A-47A4-907B-0CF5247D3018]
+[EL Fine]: sql: 2016-03-14 11:45:49.207--ClientSession(497451781)--Connection(330539551)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AppMenus_M WHERE ((menuId = ?) AND (versionId = ?))
+	bind => [26B2086C-6F0A-47A4-907B-0CF5247D3018, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
