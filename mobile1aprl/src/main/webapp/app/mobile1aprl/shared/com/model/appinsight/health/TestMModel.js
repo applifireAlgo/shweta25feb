@@ -1,0 +1,31 @@
+Ext.define('Mobile1aprl.mobile1aprl.shared.com.model.appinsight.health.TestMModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "testMId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "testNM",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "testNo",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
